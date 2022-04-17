@@ -1,0 +1,24 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(41,57,97,0.8533613274411327) 100%);
+    text-align: center;
+    margin: 1.2rem auto;
+}
+
+body h1 {
+    margin: 70px auto 2px auto;
+}
+
+#survey-form {
+    width: 30%;
+    margin: 1.2rem auto;
+    height: auto;
+    border-radius: 4%;
+    background: transparent;
+    border: solid 1px black;
+}
