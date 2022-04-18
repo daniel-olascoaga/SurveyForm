@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
     <title>Survey Form</title>
 </head>
 <body>
-    <h1 id="title">Mi primer formulario</h1>
-    <p id="description">Propuesta de formulario</p>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Formulario de preguntas</p>
     <form id="survey-form" action="">
-        <div class="dato">
+        <div id="dato" class="content-class">
             <label id="name-label" for="name">Name</label><br>
             <input id="name" type="text" name="name" placeholder="Introduce tu nombre"><br>
             <label id="email-label" for="email">Email</label><br>
@@ -19,7 +22,7 @@
             <label id="number-email" for="number">Edad(opcional)</label><br>
             <input id="number" type="number" name="number" min="10" max="90" placeholder="Edad"><br>
         </div>
-        <div class="div-radio">
+        <div id="div-radio" class="content-class" >
             <p>Elige</p>
             <input id="one" type="radio" name="seleccion">
             <label for="one">1</label><br>
@@ -28,7 +31,7 @@
             <input id="three" type="radio" name="seleccion">
             <label for="three">3</label><br>
         </div>
-        <div class="seleccionar">
+        <div id="seleccionar" class="content-class">
             <label id="number-email" for="dropdown">Selecciona</label><br>
             <select name="" id="dropdown">
                 <option value="">A</option>
@@ -37,7 +40,7 @@
                 <option value="">D</option>
             </select><br>
         </div>
-        <div class="checkbox">
+        <div id="checkbox" class="content-class">
             <p>que diga cualquier cosa</p>
             <input id="one" type="checkbox" name="seleccion" value="one">
             <label for="one">1</label><br>
@@ -46,11 +49,13 @@
             <input id="three" type="checkbox" name="seleccion" value="three">
             <label for="three">3</label><br>
         </div>
-        <div class="texto">
+        <div id="texto" class="content-class">
             <p>escribe un texto aqui</p>
             <textarea name="content" id="content-text" cols="30" rows="10" placeholder="escribe aqui"></textarea>
         </div>
-        <button id="submit">submit</button>
+        <div class="content-class">
+            <input id="submit" type="submit" value="Submit">
+        </div>
     </form>
 </body>
 </html>
