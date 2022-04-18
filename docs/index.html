@@ -15,46 +15,46 @@
     <p id="description">Formulario de preguntas</p>
     <form id="survey-form" action="">
         <div id="dato" class="content-class">
-            <label id="name-label" for="name">Name</label><br>
-            <input id="name" type="text" name="name" placeholder="Introduce tu nombre"><br>
+            <label id="name-label" for="name">Nombre</label><br>
+            <input id="name" type="text" name="name" placeholder="Introduce tu nombre" required><br>
             <label id="email-label" for="email">Email</label><br>
-            <input id="email" type="email" name="email" placeholder="Introduce tu correo"><br>
-            <label id="number-email" for="number">Edad(opcional)</label><br>
+            <input id="email" type="email" name="email" placeholder="Introduce tu correo" required><br>
+            <label id="number-label" for="number">Edad(opcional)</label><br>
             <input id="number" type="number" name="number" min="10" max="90" placeholder="Edad"><br>
         </div>
         <div id="div-radio" class="content-class" >
-            <p>Elige</p>
-            <input id="one" type="radio" name="seleccion">
-            <label for="one">1</label><br>
-            <input id="two" type="radio" name="seleccion">
-            <label for="two">2</label><br>
-            <input id="three" type="radio" name="seleccion">
-            <label for="three">3</label><br>
+            <label>Elige el deporte que mas te gusta</label><br>
+            <input id="one" type="radio" name="seleccion" value="Surf">
+            <label for="one">Surf</label><br>
+            <input id="two" type="radio" name="seleccion" value="Buceo">
+            <label for="two">Buceo</label><br>
+            <input id="three" type="radio" name="seleccion" value="Kayak">
+            <label for="three">Kayak</label><br>
         </div>
         <div id="seleccionar" class="content-class">
-            <label id="number-email" for="dropdown">Selecciona</label><br>
-            <select name="" id="dropdown">
-                <option value="">A</option>
-                <option value="">B</option>
-                <option value="">C</option>
-                <option value="">D</option>
+            <label id="number-email" for="dropdown">Selecciona la comida que mas te gusta</label><br>
+            <select id="dropdown">
+                <option value="">Pescado frito, arroz y patacón </option>
+                <option value="">Casuela de mariscos</option>
+                <option value="">Pollo con arroz de coco</option>
+                <option value="">Sopa de pescado</option>
             </select><br>
         </div>
         <div id="checkbox" class="content-class">
-            <p>que diga cualquier cosa</p>
+            <label for="">Dinos que bebida te gusta más</label><br>
             <input id="one" type="checkbox" name="seleccion" value="one">
-            <label for="one">1</label><br>
+            <label for="one">Cocteles</label><br>
             <input id="two" type="checkbox" name="seleccion" value="two">
-            <label for="two">2</label><br>
+            <label for="two">Jugos</label><br>
             <input id="three" type="checkbox" name="seleccion" value="three">
-            <label for="three">3</label><br>
+            <label for="three">Agua de coco</label><br>
         </div>
         <div id="texto" class="content-class">
-            <p>escribe un texto aqui</p>
-            <textarea name="content" id="content-text" cols="30" rows="10" placeholder="escribe aqui"></textarea>
+            <label for="">¿Que otras cosas te gustan de la playa?</label><br>
+            <textarea name="content" id="content-text" cols="30" rows="10" placeholder="Escribe aqui"></textarea>
         </div>
         <div class="content-class">
-            <input id="submit" type="submit" value="Submit">
+            <button id="submit">Submit</button>
         </div>
     </form>
 </body>

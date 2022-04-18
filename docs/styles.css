@@ -36,6 +36,23 @@ body > p {
     margin: 1.2rem 2.5rem;
 }
 
+#survey-form label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+#survey-form > .content-class > #submit{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 input[type=text], input[type=email], input[type=number], select, textarea {
     width: 100%;
     padding: 12px 20px;
@@ -57,18 +74,66 @@ input[type=radio], input[type=checkbox] {
     height: 1.5rem;
 }
 
+input[type=submit]:hover {
+    background-color: #45A049;
+}
 
-input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+  /* RESPONSIVE */
 
-  input[type=submit]:hover {
-      background-color: #45A049;
-  }
+  /* Tablets en horizonal y escritorios normales */
+@media (min-width: 768px) and (max-width: 1199px) { 
+
+ }
+ 
+/* Móviles en horizontal o tablets en vertical*/
+@media (max-width: 767px) {
+
+    body h1 {
+        font-size: 4rem;
+    }
+    
+    body > p {
+        font-size: 2rem;
+    }
+
+    #survey-form {
+        width: 60%;
+        margin: 1.5rem auto;
+        border-radius: 2%;
+    }
+
+    #survey-form > .content-class {
+        margin: 1rem 2rem;
+    }
+
+    #survey-form label {
+        font-size: 1.2rem;
+    }
+
+ }
+ 
+/* Móviles en vertical */
+@media (max-width: 480px) {
+   
+    body h1 {
+        font-size: 3rem;
+    }
+    
+    body > p {
+        font-size: 1rem;
+    }
+
+    #survey-form {
+        width: 80%;
+        margin: 1rem auto;
+        border-radius: 1%;
+    }
+
+    #survey-form > .content-class {
+        margin: 1rem 2rem;
+    }
+
+    #survey-form label {
+        font-size: 1rem;
+    }
+ }
